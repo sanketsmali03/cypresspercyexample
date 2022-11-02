@@ -9,22 +9,21 @@ describe('TodoMVC', function () {
   beforeEach(function () {
     // Load our app before starting each test case
     //cy.viewport(1440, 900)
-    cy.visit('https://www.dolcegabbana.com/en/home/')
-  
+    //cy.visit('https://www.dolcegabbana.com/en/home/')
+    cy.visit('https://dev-dg.thelevelgroup.com/en/')
 
   })
 
   it('Loads the TodoMVC app', function () {
 
-   // cy.visit('https://dev-dg.thelevelgroup.com/en/')
     cy.wait(4000);
     
    
 
-    cy.contains("Allow all").click();
+   // cy.contains("Allow all").click();
 
 
-   //cy.get('.fancybox-close').click();
+   cy.get('.fancybox-close').click();
    
 
     //cy.get('.cookiebanner__buttons__accept').click();
